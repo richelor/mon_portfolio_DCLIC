@@ -1,0 +1,306 @@
+/* ------------------------------
+   Styles de base pour toute la page
+   ------------------------------ */
+* {
+    box-sizing: border-box; /* Inclure padding et border dans la taille totale */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa; /* Couleur de fond claire */
+    color: #333; /* Couleur du texte principale */
+}
+
+/* Conteneur centré pour le contenu principal */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* ------------------------------
+   En-tête et navigation
+   ------------------------------ */
+header {
+    background-color: #1e88e5; /* Bleu principal */
+    color: #fff;
+}
+
+/* Barre de navigation */
+.navbar {
+    display: flex; /* Alignement horizontal */
+    justify-content: space-between; /* Espace entre logo et liens */
+    align-items: center; /* Centrer verticalement */
+    padding: 1rem 2rem;
+}
+
+/* Logo / nom à gauche */
+.logo {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Liste des liens de navigation */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem; /* Espace entre les liens */
+}
+
+/* Style des liens du menu */
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Survol et lien actif dans le menu */
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #1565c0;
+}
+
+/* ------------------------------
+   Section d'accueil (hero)
+   ------------------------------ */
+.hero {
+    background: linear-gradient(135deg, #1e88e5, #42a5f5);
+    color: #fff;
+    padding: 3rem 0;
+}
+
+/* Contenu de la section d'accueil */
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.hero-content p {
+    max-width: 700px;
+    margin-bottom: 1.5rem;
+}
+
+/* Boutons dans la section d'accueil */
+.hero-buttons .btn {
+    margin-right: 1rem;
+}
+
+/* ------------------------------
+   Boutons réutilisables
+   ------------------------------ */
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #1e88e5;
+    padding: 0.7rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    /* Effet léger au survol */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px); /* Le bouton "monte" un peu */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* Ombre légère */
+}
+
+/* Variante de bouton transparent */
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+/* ------------------------------
+   Titres et cartes de contenu
+   ------------------------------ */
+h1 {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+}
+
+/* Carte : bloc blanc avec ombre légère */
+.card {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+/* Grille d'informations (2 colonnes) */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Grille pour les projets */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Carte de projet avec effet au survol (géré aussi en JS) */
+.project-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Classe ajoutée au survol en JavaScript */
+.project-card.hovered {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* ------------------------------
+   Formulaire de contact
+   ------------------------------ */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Label du formulaire */
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+/* Champs de saisie et zone de texte */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font: inherit; /* Utiliser la même police que le reste de la page */
+}
+
+textarea {
+    resize: vertical; /* Autoriser l'utilisateur à agrandir verticalement */
+}
+
+/* Message d'erreur sous les champs */
+.error-message {
+    color: #c62828;
+    font-size: 0.85rem;
+}
+
+/* Message de succès sous le formulaire */
+.success-message {
+    color: #2e7d32;
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+}
+
+/* ------------------------------
+   Pied de page
+   ------------------------------ */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    background-color: #1e88e5;
+    color: #fff;
+}
+
+/* ------------------------------
+   Responsive (petits écrans)
+   ------------------------------ */
+@media (max-width: 768px) {
+    /* Navigation s'affiche en colonne sur petit écran */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
+/* ===============================
+   BANNIÈRES DES PAGES
+=============================== */
+.page-banner {
+    width: 100%;
+    max-height: 240px;
+    overflow: hidden;
+    border-radius: 0 0 12px 12px;
+    margin-bottom: 2rem;
+}
+
+.page-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* ===============================
+   SECTION COMPÉTENCES (Accueil + Skills Page)
+=============================== */
+
+.skills-home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skills-card h3 {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+}
+
+.skill {
+    margin-bottom: 1.4rem;
+}
+
+.skill-title {
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+}
+
+.skill-desc {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.4rem;
+}
+
+/* BARRE DE COMPÉTENCE */
+.skill-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    width: 0%; /* largeur initiale pour que l'animation fonctionne */
+    height: 100%;
+    background-color: #1e88e5; /* même bleu que ton thème */
+    border-radius: 10px;
+    transition: width 1.4s ease-out; /* animation fluide */
+}

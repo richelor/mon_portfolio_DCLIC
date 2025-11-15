@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil - Portfolio Richelor POLYNICE</title>
+
+    <!-- Feuille de style -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Script JS -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- ===========================
+     HEADER / BANNIÈRE / NAVIGATION
+=========================== -->
+<header class="header">
+
+    <!-- Bannière d’accueil -->
+    <div class="page-banner">
+        <img src="photo/polynice.jpg" alt="Bienvenue sur mon portfolio">
+    </div>
+
+    <nav class="navbar container">
+        <div class="logo">POLYNICE Richelor</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="projects.html">Projets</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- ===========================
+     SECTION HERO
+=========================== -->
+<section class="hero container">
+
+
+    <div class="hero-text">
+        <h1>Je suis <span class="accent">Richelor</span>, Développeur en devenir passionné par le web et le design, 
+            les Sciences Economiques, l'Administration, la Diplomatie et la Coopération Internationale. !</h1>
+        <a href="projects.html" class="btn btn-primary">Voir mes projets</a>
+    </div>
+
+
+    <div class="hero-image">
+        <img src="photo/projet.jpg" alt="Illustration développeur">
+    </div>
+
+</section>
+
+<!-- ===========================
+     SECTION A PROPOS
+=========================== -->
+<section class="section-light">
+    <div class="container about-home">
+
+        <h2 class="section-title">À propos</h2>
+
+        <div class="about-home-grid">
+
+            <div>
+                <p>
+                    Je m'appelle <strong>Richelor POLYNICE</strong>, passionné par la création
+                    de sites web modernes et interactifs.
+                </p>
+                <p>
+                    Je suis actuellement étudiant en <span class="accent">développement web</span>,
+                    et je cherche à améliorer mes compétences en JavaScript, HTML et CSS.
+                </p>
+                <p>
+                    J’adore transformer mes idées en projets concrets et expérimenter avec les nouvelles technologies.
+                </p>
+
+                <a class="btn btn-primary" href="#">Télécharger mon CV</a>
+            </div>
+
+            <img src="photo/Richelor.jpg" alt="Photo de Richelor" class="about-round">
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ===========================
+     SECTION PROJETS 
+=========================== -->
+<section class="section-white">
+    <div class="container">
+
+        <h2 class="section-title">Mes Projets</h2>
+
+        <div class="projects-list">
+
+            <!-- PROJET 1 : Eco-Detay -->
+            <div class="card project-card">
+                <img src="photo/projet.jpg" alt="Eco-Detay" class="project-home-img">
+                <p><strong>Eco-Detay</strong> : Co-fondateur et responsable rédaction. Analyses économiques, vulgarisation et diffusion de contenus.</p>
+                <p class="project-tags">#économie #analyse #rédaction</p>
+                <a href="projects.html" class="btn btn-primary">Voir</a>
+            </div>
+
+            <!-- PROJET 2 : Enquêtes socio-économiques -->
+            <div class="card project-card">
+                <img src="photo/enquete.jpg" alt="Enquêtes socio-économiques" class="project-home-img">
+                <p><strong>Enquêtes socio-économiques</strong> : Conception de questionnaires, collecte terrain, saisie, analyse et rapport.</p>
+                <p class="project-tags">#terrain #statistiques #MEAL</p>
+                <a href="projects.html" class="btn btn-primary">Voir</a>
+            </div>
+
+            <!-- PROJET 3 : Diplomatie & Coopération -->
+            <div class="card project-card">
+                <img src="photo/Diplomatie.jpg" alt="Diplomatie" class="project-home-img">
+                <p><strong>Diplomatie & Coopération internationale</strong> : Travaux académiques réalisés à l’Académie Jean Price-Mars.</p>
+                <p class="project-tags">#diplomatie #coopération #affairesétrangères</p>
+                <a href="projects.html" class="btn btn-primary">Voir</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ===========================
+     SECTION COMPÉTENCES 
+=========================== -->
+<section class="section-light">
+    <div class="container">
+
+        <h2 class="section-title">Mes Compétences</h2>
+
+        <div class="skills-home">
+
+            <!-- Soft Skills -->
+            <div class="card skills-card">
+                <h3>Soft Skills</h3>
+
+                <div class="skill">
+                    <span class="skill-title">Gestion de projet</span>
+                    <p class="skill-desc">Organisation, coordination, planification et suivi des tâches.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span class="skill-title">Résolution de problèmes</span>
+                    <p class="skill-desc">Analyse logique, capacité d'adaptation et prise de décision.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span class="skill-title">Adaptabilité</span>
+                    <p class="skill-desc">Flexibilité, ouverture d’esprit et apprentissage rapide.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                </div>
+            </div>
+
+            <!-- Hard Skills -->
+            <div class="card skills-card">
+                <h3>Hard Skills</h3>
+
+                <div class="skill">
+                    <span class="skill-title">HTML</span>
+                    <p class="skill-desc">Création et structuration des pages web modernes.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span class="skill-title">CSS</span>
+                    <p class="skill-desc">Mise en forme, design, responsive et animations simples.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span class="skill-title">JavaScript</span>
+                    <p class="skill-desc">Interactivité, manipulation du DOM et logique front-end.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span class="skill-title">VS Code</span>
+                    <p class="skill-desc">Utilisation d’un IDE moderne pour le développement web.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ===========================
+     SECTION CONTACT
+=========================== -->
+<section class="section-dark">
+    <div class="container contact-container">
+
+        <h2 class="contact-title">
+            Vous avez un <span class="accent">projet</span> en tête ?<br>
+            N’hésitez pas à me <span class="accent">contacter</span>
+        </h2>
+
+        <form id="contact-form" class="contact-form">
+
+            <div class="form-row">
+                <input type="text" id="prenom" placeholder="Votre prénom">
+                <input type="text" id="nom" placeholder="Votre nom">
+            </div>
+
+            <input type="text" id="sujet" placeholder="Votre sujet">
+
+            <textarea id="message" rows="5" placeholder="Écrivez votre message ici"></textarea>
+
+            <button type="submit" class="btn btn-primary btn-large">Envoyer</button>
+
+            <p id="form-success" class="success-message"></p>
+        </form>
+
+    </div>
+</section>
+
+
+<!-- ===========================
+     PIED DE PAGE
+=========================== -->
+<footer class="footer">
+    <div class="container footer-content">
+        <p>Designed by <span class="accent">Richelor</span> with HTML, CSS, JS</p>
+        <p>Tous droits réservés - 2025</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>À propos - Richelor POLYNICE</title>
+
+    <!-- Feuille de style externe -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Script JavaScript -->
+    <script src="script.js" defer></script>
+
+    <!-- Style interne pour aligner la photo à droite -->
+    <style>
+        .about-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .about-photo img {
+            border-radius: 8px;
+            width: 220px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        /* Petites images thématiques */
+        .about-extra img {
+            width: 100%;
+            border-radius: 6px;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Barre de navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Richelor POLYNICE</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html" class="active">À propos</a></li>
+                <li><a href="skills.html">Compétences</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="hobbies.html">Centres d'intérêt</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="container">
+
+        <h1>À propos de moi</h1>
+
+        <section class="about-top">
+
+            <!-- Texte biographique -->
+            <div class="about-text">
+                <p>
+                    Je m'appelle <strong>Richelor POLYNICE</strong>, professionnel haïtien diplômé en 
+                    Économie à la Faculté de Droit et des Sciences Economiques de l'Université d'Etat d'Haïti (FDSE-UEH) et en Administration option Gestion des Affaires à École Nationale Supérieure de Téchnologie (ENST).
+                </p>
+
+                <p>
+                    Je poursuis un parcours en <strong>Diplomatie & Coopération internationale</strong>
+                    au Ministère des Affaires Étrangères (Académie diplomatique Jean Price-Mars- ADJPM),
+                    dans le cadre d’un Master II en partenariat avec lInstitut National d'Administration et de Gestion et de Hautes Etudes Internationales de l'Université d'Etat d'Haïti (INAGHEI–UEH).
+                </p>
+
+                <p>
+                    Je suis également <strong>Fellow du Aspire Leaders Program</strong>, une initiative 
+                    mondiale axée sur le leadership, le développement et l’innovation sociale. 
+                </p>
+                <p>
+                    Je suis aussi une formation avec OIF sur le  <strong> le developpement Web niveau débutant</strong>, une initiative 
+                    qui vise à promouvroir la culture du numérique dans la communuaté francophone.
+                </p>
+
+                <p>
+                    En parallèle, je co-dirige la plateforme <strong>Eco-Detay</strong> en tant que 
+                    co-fondateur et rédacteur en chef, où je supervise des analyses économiques, la 
+                    rédaction d'articles et la qualité éditoriale.
+                </p>
+            </div>
+
+            <!-- Photo d'identité -->
+            <div class="about-photo">
+                <img src="photo/Richelor.jpg" alt="Photo de Richelor POLYNICE">
+            </div>
+
+        </section>
+
+        <!-- Images thématiques supplémentaires -->
+        <section class="info-grid about-extra">
+
+            <div class="card">
+                <h2>Formation Diplomatique</h2>
+                <img src="photo/Diplomatie.jpg" alt="Diplomatie">
+            </div>
+
+            <div class="card">
+                <h2>Recherche & Analyse</h2>
+                <img src="photo/recherche.jpg" alt="Recherche académique">
+            </div>
+
+            <div class="card">
+                <h2>Certification & Formation</h2>
+                <img src="photo/formation.jpg" alt="Formation professionnelle">
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Portfolio de Richelor POLYNICE</p>
+    </footer>
+
+</body>
+</html>
